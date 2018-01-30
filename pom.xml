@@ -1029,7 +1029,8 @@
     <module>myproject-redis</module>
     <module>myproject-springcloud</module>
     <module>myproject-tcc</module>
-  </modules>
+    <module>myproject-springboot</module>
+	</modules>
 	
 	<build>
 		<!-- 插件统一管理 -->
