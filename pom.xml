@@ -1027,6 +1027,8 @@
 	<modules>
 		<module>myproject-netty</module>
     <module>myproject-redis</module>
+    <module>myproject-springcloud</module>
+    <module>myproject-tcc</module>
   </modules>
 	
 	<build>
