@@ -1026,10 +1026,10 @@
 
 	<modules>
 		<module>myproject-netty</module>
-    <module>myproject-redis</module>
-    <module>myproject-springcloud</module>
-    <module>myproject-tcc</module>
-    <module>myproject-springboot</module>
+	    <module>myproject-redis</module>
+	    <module>myproject-tcc</module>
+	    <module>myproject-concurrency</module>
+	    <module>myproject-rpc</module>
 	</modules>
 	
 	<build>
