@@ -33,3 +33,4 @@
 6：迪米特原则：最小知道原则
 
 参考，https://www.cnblogs.com/hnrainll/archive/2012/09/18/2690846.html
+博客：http://www.runoob.com/design-pattern/factory-pattern.html
