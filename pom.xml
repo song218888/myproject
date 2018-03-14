@@ -1030,6 +1030,7 @@
 	    <module>myproject-tcc</module>
 	    <module>myproject-concurrency</module>
 	    <module>myproject-rpc</module>
+	    <module>myproject-designmodel</module>
 	</modules>
 	
 	<build>
