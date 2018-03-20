@@ -1031,6 +1031,7 @@
 	    <module>myproject-concurrency</module>
 	    <module>myproject-rpc</module>
 	    <module>myproject-designmodel</module>
+	    <module>myproject-ppp-payroll</module>
 	</modules>
 	
 	<build>
