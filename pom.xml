@@ -1032,6 +1032,11 @@
 	    <module>myproject-rpc</module>
 	    <module>myproject-designmodel</module>
 	    <module>myproject-ppp-payroll</module>
+	    <module>myproject-spring</module>
+	    <module>myproject-mongodb</module>
+	    <module>myproject-hbase</module>
+	    <module>spring-kafka</module>
+	    <module>myproject-mybatis</module>
 	</modules>
 	
 	<build>
