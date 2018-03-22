@@ -1,14 +1,5 @@
-package chaptor02.autoconfig;
+package chaptor02.javaconfig;
 
-import org.springframework.stereotype.Component;
-
-//CD实现类
-/**
- * @Compent，表示该类是一个组件类，需要spring为这个类创建bean
- * @author DELL
- *
- */
-@Component
 public class SgtPeppers implements CompactDisc{
 	
 	private String title = "She";

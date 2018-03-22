@@ -1,6 +1,5 @@
-package chaptor02.autoconfig;
+package chaptor02.javaconfig;
 
-//CD
 public interface CompactDisc {
 	void play();
 }
