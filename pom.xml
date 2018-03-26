@@ -1037,6 +1037,7 @@
 	    <module>myproject-hbase</module>
 	    <module>spring-kafka</module>
 	    <module>myproject-mybatis</module>
+	    <module>myproject-javabasic</module>
 	</modules>
 	
 	<build>
