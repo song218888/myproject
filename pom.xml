@@ -1038,6 +1038,8 @@
 	    <module>myproject-mybatis</module>
 	    <module>myproject-javabasic</module>
 	    <module>myproject-kafka</module>
+	    <module>myproject-springboot</module>
+	    <module>myproject-springcloud</module>
 	</modules>
 	
 	<build>
