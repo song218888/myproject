@@ -1035,9 +1035,9 @@
 	    <module>myproject-spring</module>
 	    <module>myproject-mongodb</module>
 	    <module>myproject-hbase</module>
-	    <module>spring-kafka</module>
 	    <module>myproject-mybatis</module>
 	    <module>myproject-javabasic</module>
+	    <module>myproject-kafka</module>
 	</modules>
 	
 	<build>
