@@ -1040,6 +1040,7 @@
 	    <module>myproject-kafka</module>
 	    <module>myproject-springboot</module>
 	    <module>myproject-springcloud</module>
+	    <module>myproject-jvm</module>
 	</modules>
 	
 	<build>
