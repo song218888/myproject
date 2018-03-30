@@ -3,3 +3,12 @@ spring cloud教程：https://github.com/forezp/SpringCloudLearning
 
 1：@SpringBootApplication启动类，一定要放在其它类的上级目录
 2：yml文件属性值前面一定要有空格
+
+
+@SpringBootApplication    启动类
+@RestController           映射注解
+@Import
+@Bean
+@Configuration
+@EnableConfigurationProperties(ServiceProperties.class)
+@ConfigurationProperties
