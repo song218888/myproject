@@ -6,9 +6,9 @@ import java.util.Map;
 import org.junit.Test;
 
 import com.tiancheng.hystrix.demo01.HelloWorldHystrixCommand;
-import com.tiancheng.hystrix.demo01.HystrixSemaphore;
+import com.tiancheng.hystrix.demo01.HystrixCommand4Semaphore;
 
-public class HystrixSemaphoreTest {
+public class HystrixCommand4SemaphoreTest {
 	@Test
     public void testSynchronous() throws IOException {
 		try {
@@ -21,7 +21,7 @@ public class HystrixSemaphoreTest {
                     public void run() {
                     	// 这里执行两类command：HystrixCommand4SemaphoreTest设置了信号量隔离、HelloWorldHystrixCommand未设置信号量
                         System.out.println("-----------" + new HelloWorldHystrixCommand("HLX" + j).execute());
-                        System.out.println("===========" + new HystrixSemaphore("HLX" + j).execute());	// 被信号量拒绝的线程从这里抛出异常
+                        System.out.println("===========" + new HystrixCommand4Semaphore("HLX" + j).execute());	// 被信号量拒绝的线程从这里抛出异常
                         System.out.println("-----------" + new HelloWorldHystrixCommand("HLX" + j).execute());	// 被信号量拒绝的线程不能执行到这里
                         
                     }  

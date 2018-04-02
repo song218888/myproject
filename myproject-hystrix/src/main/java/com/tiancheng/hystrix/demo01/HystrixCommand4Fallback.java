@@ -4,11 +4,11 @@ import com.netflix.hystrix.HystrixCommand;
 import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.exception.HystrixTimeoutException;
 
-public class HelloWorldHystrixFallback extends HystrixCommand<String> {
+public class HystrixCommand4Fallback extends HystrixCommand<String> {
 
 	private final String name;
 
-	public HelloWorldHystrixFallback(String name) {
+	public HystrixCommand4Fallback(String name) {
 		// TODO Auto-generated constructor stub
 		 super(HystrixCommandGroupKey.Factory.asKey("ExampleGroup"));
 		this.name = name;

@@ -9,11 +9,11 @@ import com.netflix.hystrix.HystrixCommandProperties;
 import com.netflix.hystrix.HystrixThreadPoolKey;
 import com.netflix.hystrix.HystrixThreadPoolProperties;
 
-public class HystrixThreadPool extends HystrixCommand<String> {
+public class HystrixCommand4ThreadPool extends HystrixCommand<String> {
 
 	private final String name;
 
-	public HystrixThreadPool(String name) {
+	public HystrixCommand4ThreadPool(String name) {
 		super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("ThreadPoolTestGroup"))
 				.andCommandKey(HystrixCommandKey.Factory.asKey("testCommandKey"))
 				.andThreadPoolKey(HystrixThreadPoolKey.Factory.asKey("ThreadPoolTest"))

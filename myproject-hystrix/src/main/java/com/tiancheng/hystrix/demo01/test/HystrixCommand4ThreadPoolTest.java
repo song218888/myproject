@@ -7,16 +7,16 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
 
-import com.tiancheng.hystrix.demo01.HystrixThreadPool;
+import com.tiancheng.hystrix.demo01.HystrixCommand4ThreadPool;
 
-public class HystrixThreadPoolTest {
+public class HystrixCommand4ThreadPoolTest {
 	@Test
     public void testSynchronous() throws IOException {
     	for(int i = 0; i < 10; i++) {
         	try {
 //        		assertEquals("fallback: Hlx", new HystrixCommand4ThreadPoolTest("Hlx").execute());
 //        		System.out.println("===========" + new HystrixCommand4ThreadPoolTest("Hlx").execute());
-        		Future<String> future = new HystrixThreadPool("Hlx"+i).queue();
+        		Future<String> future = new HystrixCommand4ThreadPool("Hlx"+i).queue();
         		System.out.println("===========" + future);
         	} catch(Exception e) {
         		System.out.println("run()抛出HystrixBadRequestException时，被捕获到这里" + e.getCause());
@@ -25,7 +25,7 @@ public class HystrixThreadPoolTest {
     	for(int i = 11; i < 30; i++) {
         	try {
 //        		assertEquals("fallback: Hlx", new HystrixCommand4ThreadPoolTest("Hlx").execute());
-        		System.out.println("===========" + new HystrixThreadPool("Hlx").execute());
+        		System.out.println("===========" + new HystrixCommand4ThreadPool("Hlx").execute());
 //        		Future<String> future = new HystrixCommand4ThreadPoolTest("Hlx1"+i).queue();
 //        		System.out.println("===========" + future);
         	} catch(Exception e) {

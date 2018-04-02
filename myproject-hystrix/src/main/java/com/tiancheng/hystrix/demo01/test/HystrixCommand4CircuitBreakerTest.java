@@ -4,15 +4,15 @@ import java.io.IOException;
 
 import org.junit.Test;
 
-import com.tiancheng.hystrix.demo01.HystrixCircuitBreaker;
+import com.tiancheng.hystrix.demo01.HystrixCommand4CircuitBreaker;
 
-public class HystrixCircuitBreakerTest {
+public class HystrixCommand4CircuitBreakerTest {
 	
   @Test
   public void testSynchronous() throws IOException {
   	for(int i = 0; i < 10; i++) {
       	try {
-      		System.out.println("===========" + new HystrixCircuitBreaker(String.valueOf(i)).execute());
+      		System.out.println("===========" + new HystrixCommand4CircuitBreaker(String.valueOf(i)).execute());
 //      		try {
 //          		TimeUnit.MILLISECONDS.sleep(1000);
 //          	}catch(Exception e) {}
