@@ -8,7 +8,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 /**
- * Athlete 运动员 每个运动员到达屏障后，才能开始马拉松比赛
+ * Athlete 运动员每个运动员到达屏障后，才能开始马拉松比赛
  * 
  * @author DELL
  *
@@ -27,6 +27,7 @@ class Athlete implements Runnable {
 		System.out.println(name + "就位");
 		try {
 			cyclicBarrier.await();
+			System.out.println("====== : " + Thread.currentThread().getName());
 			Random random = new Random();
 			double time = random.nextDouble() + 9;
 			System.out.println(name + ": " + time);

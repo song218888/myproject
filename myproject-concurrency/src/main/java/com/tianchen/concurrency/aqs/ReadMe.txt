@@ -11,6 +11,7 @@ CyclicBarrier(循环屏障)
 
 Semaphore：
 	是用来控制同时访问特定资源的线程数量，它通过协调各个线程，以保证合理的使用公共资源
+	参考：https://www.cnblogs.com/cl1024cl/p/6205011.html
 
 
 CountDownLatch: 
