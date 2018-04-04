@@ -1,5 +1,5 @@
 package com.tianchen.concurrency.containers;
 
-public class CopyOnWriteArrayListTest {
+public class CopyOnWriteArrayListDemo01 {
 
 }

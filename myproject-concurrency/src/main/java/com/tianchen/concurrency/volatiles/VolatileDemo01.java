@@ -1,5 +1,5 @@
 package com.tianchen.concurrency.volatiles;
 
-public class VolatileTest {
+public class VolatileDemo01 {
 
 }

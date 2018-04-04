@@ -1,8 +1,17 @@
-CyclicBarrier
+CyclicBarrier(循环屏障)
 1：CyclicBarrier是什么
+	一组线程达到屏障时被阻挡，只有最后一个线程到达时，所有线程才可以继续前进
 
-2：CyclicBarrier能解决什么问题
+2：CyclicBarrier怎么使用
+	一组线程使用await()，所有线程都到达各自的barrier后，再同时执行各自barrier下面的代码
 
 3：CyclicBarrier基本原理
 
 4：CyclicBarrier能解决什么问题
+
+5：与CountDownLatch区别
+	线程在countDown()之后，会继续执行自己的任务，而CyclicBarrier会在所有线程任务结束之后，才会进行后续任务
+	
+	参考：
+	https://blog.csdn.net/tolcf/article/details/50925145
+	https://blog.csdn.net/bntX2jSQfEHy7/article/details/78237208

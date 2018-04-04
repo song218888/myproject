@@ -1,8 +1,15 @@
 Semaphore
 1：Semaphore是什么
+		是用来控制同时访问特定资源的线程数量，它通过协调各个线程，以保证合理的使用公共资源
 
-2：Semaphore能解决什么问题
+2：Semaphore怎么使用
+   semaphore.acquire();
+   seamphore.release();
 
 3：Semaphore基本原理
 
+
 4：Semaphore能解决什么问题
+
+
+参考：https://www.cnblogs.com/cl1024cl/p/6205011.html

@@ -1,8 +1,14 @@
 ReentrantLock
 1：ReentrantLock是什么
+	I：与Synchronized区别：http://www.cnblogs.com/chenssy/p/4735381.html
+    II：一种可重入锁，是独占式的，与synchronized一样
+    
 
-2：ReentrantLock能解决什么问题
+2：ReentrantLock怎么使用
+
 
 3：ReentrantLock基本原理
+	https://blog.csdn.net/yanyan19880509/article/details/52345422
+	
 
 4：ReentrantLock能解决什么问题

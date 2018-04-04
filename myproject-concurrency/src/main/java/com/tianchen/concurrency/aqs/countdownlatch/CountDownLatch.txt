@@ -1,8 +1,18 @@
 CountDownLatch
 1：CountDownLatch是什么
+   是一个同步工具，允许一个或多个线程等待，直到其它的线程到达指定点后，再往后执行
 
 2：CountDownLatch能解决什么问题
 
-3：CountDownLatch基本原理
 
-4：CountDownLatch能解决什么问题
+3：CountDownLatch基本原理
+   原理解析：https://blog.csdn.net/yanyan19880509/article/details/52349056
+
+4：CountDownLatch典型应用场景
+   I：实现最大的并行性：有时我们想同时启动多个线程，实现最大程度的并行性。
+   II：开始执行前等待n个线程完成各自任务例
+   III：死锁检测
+   
+   
+   
+参考：https://www.2cto.com/kf/201710/688656.html   
