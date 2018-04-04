@@ -1,0 +1,13 @@
+AbstractQueueSynchronized
+1：是什么
+
+2：怎么用
+
+3：原理
+   CLH：http://www.360doc.com/content/13/0620/10/9437165_294220354.shtml
+4：典型场景
+
+5：参考资料
+    
+
+    
