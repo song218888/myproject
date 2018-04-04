@@ -1,5 +1,5 @@
 package com.tianchen.concurrency.blockingqueue;
 
-public class BlockingQueueTest {
+public class BlockingQueueDemo01 {
 
 }
