@@ -19,7 +19,7 @@ class CallableDemo1 implements Callable<Integer>{
 
 
 
-public class CallableDemo2 {
+public class CallableDemo02 {
 	
 	public static void main(String[] args) {
 		Callable<Integer> callable = new Callable<Integer>() {

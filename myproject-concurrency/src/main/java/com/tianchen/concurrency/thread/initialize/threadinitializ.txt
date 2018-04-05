@@ -4,3 +4,6 @@
 3：使用线程内部类
 4：callable带返回值
 5：利用线程池
+6：Future与FutureTask区别
+   	future是一个同步方法，idDone()判断线程是否执行结束
+   	参见：https://blog.csdn.net/zhousenshan/article/details/51473590
