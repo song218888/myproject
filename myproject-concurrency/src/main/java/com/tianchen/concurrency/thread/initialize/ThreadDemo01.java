@@ -1,4 +1,4 @@
-package com.tianchen.concurrency.thread;
+package com.tianchen.concurrency.thread.initialize;
 
 import java.io.FileWriter;
 import java.io.IOException;
