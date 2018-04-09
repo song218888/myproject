@@ -21,7 +21,7 @@ class ThreadTest implements Runnable {
 
 }
 
-public class JoinDemo01 {
+public class ThreadJoinDemo01 {
 	public static void main(String[] args) throws Exception {
 		ThreadTest test = new ThreadTest();
 		ThreadTest test2 = new ThreadTest();

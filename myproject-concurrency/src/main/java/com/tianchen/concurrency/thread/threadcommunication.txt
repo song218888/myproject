@@ -1,0 +1,17 @@
+线程通信：
+1：join() 
+	thread.Join把指定的线程加入到当前线程，可以将两个交替执行的线程合并为顺序执行的线程。比如在线程B中调用了线程A的Join()方法，直到线程A执行完毕后，才会继续执行线程B
+2：wait()、 notify()、
+3：线程中断interrupted
+	抛InterruptedException的代表方法有：
+	Java.lang.Object 类的 wait 方法
+	java.lang.Thread 类的 sleep 方法
+	java.lang.Thread 类的 join 方法
+	https://www.cnblogs.com/xll1025/p/6415378.html
+	问题：如何在线程池中实现join效果呢
+4：yield
+   线程交出控制权，但不会释放资源锁	
+   
+   
+线程间通信：http://www.importnew.com/26850.html
+   

@@ -47,7 +47,7 @@ class PrimeGenerator extends Thread{
 
 
 
-public class InterruptedDemo01 {
+public class ThreadInterruptedDemo01 {
 	public static void main(String[] args) {
 
 		// Launch the prime numbers generator
