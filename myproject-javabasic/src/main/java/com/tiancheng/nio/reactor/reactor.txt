@@ -1,0 +1,27 @@
+1：什么是reactor模式
+2：reactor有什么好处
+3：怎么用reactor模式
+
+Reactor：
+	1：构造函数
+		I：初始化ServerSocketChannel
+		II:向选择器(selector)注册通道Accept事件
+		III：向选择器附加Acceptor对象
+	2：run方法
+	   I：死循环，检测选择器,selector.select()
+	   II：得到Selectionkey集合
+	   III：分发dispatch处理Selectionkey处理
+	   
+
+Accept
+	1：处理accept事件
+	
+	
+Handler
+	1：读取消息
+	2：对消息解码
+	3：处理消息
+	4：对消息编码
+	5：发送消息
+
+参考：https://www.cnblogs.com/doit8791/p/7461479.html
