@@ -5,7 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class BlockingQueueDemo01 {
-
+	
 	private static LinkedBlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<Integer>();
 
 	// public class Basket{
