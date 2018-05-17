@@ -70,7 +70,9 @@ public class NIOClient {
 					channel.write(ByteBuffer.wrap(new String("向服务端发送了一条信息").getBytes()));
 					//在和服务端连接成功之后，为了可以接收到服务端的信息，需要给通道设置读的权限。
 					channel.register(this.selector, SelectionKey.OP_READ);
-				} else if (key.isReadable()) {
+				} else if(key.isWritable()) {  
+                   write(key);
+                }else if (key.isReadable()) {
 					read(key);
 				}
 			}
@@ -87,6 +89,18 @@ public class NIOClient {
 		System.out.println("服务端收到信息：" + msg);
 		ByteBuffer outBuffer = ByteBuffer.wrap(msg.getBytes());
 		channel.write(outBuffer);// 将消息回送给客户端
+
+	}
+	
+	public void write(SelectionKey key) throws IOException {
+		//向客户端发送请求  
+        SocketChannel clientChannel = (SocketChannel)key.channel();  
+        ByteBuffer buf = (ByteBuffer)key.attachment();  
+        buf.flip();  
+        clientChannel.write(buf);  
+        System.out.println("服务端向客户端发送数据。。。");  
+        //重新注册读事件  
+        clientChannel.register(selector, SelectionKey.OP_READ);   
 
 	}
 
