@@ -4,28 +4,27 @@ import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class ReetranLockDemo2 {
+public class ReetrantLockDemo03 {
 	private ArrayList<Integer> arrayList = new ArrayList<Integer>();
-	Lock lock = new ReentrantLock();
 
 	public static void main(String[] args) {
-		final ReetranLockDemo2 reetranLockDemo02 = new ReetranLockDemo2();
+		final ReetrantLockDemo03 reetranLockDemo01 = new ReetrantLockDemo03();
 
 		new Thread() {
 			public void run() {
-				reetranLockDemo02.insert(Thread.currentThread());
+				reetranLockDemo01.insert(Thread.currentThread());
 			};
 		}.start();
 		
 		new Thread() {
 			public void run() {
-				reetranLockDemo02.insert(Thread.currentThread());
+				reetranLockDemo01.insert(Thread.currentThread());
 			};
 		}.start();
 	}
 
 	public void insert(Thread thread) {
-		
+		Lock lock = new ReentrantLock();
 		lock.lock();
 		try {
 			System.out.println(thread.getName() + " 得到了锁");

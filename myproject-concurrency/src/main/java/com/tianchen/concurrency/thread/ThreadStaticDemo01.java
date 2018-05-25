@@ -1,4 +1,4 @@
-package com.tianchen.concurrency.threadlocal;
+package com.tianchen.concurrency.thread;
 
 public class ThreadStaticDemo01 implements Runnable{
 	

@@ -1,5 +1,5 @@
 package com.tianchen.concurrency.sync;
 
-public class SynchronizedStaticMethod {
+public class FinalDemo01 {
 
 }

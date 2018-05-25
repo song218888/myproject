@@ -1,6 +1,6 @@
 package com.tianchen.concurrency.threadlocal;
 
-public class ThreadLocalDemo {
+public class ThreadLocalDemo03 {
 	ThreadLocal<Long> longLocal = new ThreadLocal<Long>();
 	ThreadLocal<String> stringLocal = new ThreadLocal<String>();
 
@@ -18,7 +18,7 @@ public class ThreadLocalDemo {
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-		final ThreadLocalDemo test = new ThreadLocalDemo();
+		final ThreadLocalDemo03 test = new ThreadLocalDemo03();
 
 		System.out.println(test.getLong());
 		System.out.println(test.getString());

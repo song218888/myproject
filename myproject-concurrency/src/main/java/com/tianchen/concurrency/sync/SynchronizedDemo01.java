@@ -7,7 +7,7 @@ package com.tianchen.concurrency.sync;
  * syncFunc为静态变量，func1为实例同步块，所以多个线程执行时，
  * func1只会顺序调用，每次只能有一个线程执行
  */
-public class SynchronizedMethod {
+public class SynchronizedDemo01 {
 	
 	public static synchronized void func1() {
 		System.out.println(Thread.currentThread().getName() + " is running");
@@ -34,7 +34,7 @@ public class SynchronizedMethod {
 
 class NewThread extends Thread {
 
-	SynchronizedMethod syncFunc = new SynchronizedMethod();
+	SynchronizedDemo01 syncFunc = new SynchronizedDemo01();
 
 	@Override
 	public void run() {

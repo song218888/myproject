@@ -6,7 +6,7 @@ package com.tianchen.concurrency.sync;
  * 1：保证操作的原子性
  * 2：保证内存的可见性
  */
-public class SynchronizedTest implements Runnable{
+public class SynchronizedDemo02 implements Runnable{
     //共享资源(临界资源)
     static int i=0;
 
@@ -23,7 +23,7 @@ public class SynchronizedTest implements Runnable{
         }
     }
     public static void main(String[] args) throws InterruptedException {
-    	SynchronizedTest instance=new SynchronizedTest();
+    	SynchronizedDemo02 instance=new SynchronizedDemo02();
         Thread t1=new Thread(instance);
         Thread t2=new Thread(instance);
         t1.start();

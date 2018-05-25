@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class ReetranLockDemo3 {
+public class ReetrantLockDemo05 {
 	private ArrayList<Integer> arrayList = new ArrayList<Integer>();
 	Lock lock = new ReentrantLock();
 
 	public static void main(String[] args) {
-		final ReetranLockDemo3 reetranLockDemo03 = new ReetranLockDemo3();
+		final ReetrantLockDemo05 reetranLockDemo03 = new ReetrantLockDemo05();
 
 		new Thread() {
 			public void run() {

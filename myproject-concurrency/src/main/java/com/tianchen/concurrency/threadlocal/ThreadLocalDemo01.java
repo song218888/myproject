@@ -2,7 +2,7 @@ package com.tianchen.concurrency.threadlocal;
 
 import java.util.Random;
 
-public class TestThreadLocal {
+public class ThreadLocalDemo01 {
     public static class MyRunnable1 implements Runnable {
         private ThreadLocal<Integer> threadlocal = new ThreadLocal<Integer>();
         @Override
