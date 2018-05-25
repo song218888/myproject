@@ -1,30 +1,31 @@
-package com.tianchen.concurrency.lock;
+package com.tianchen.concurrency.aqs.reentrantlock;
 
 import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class ReetranLockDemo01 {
+public class ReetranLockDemo2 {
 	private ArrayList<Integer> arrayList = new ArrayList<Integer>();
+	Lock lock = new ReentrantLock();
 
 	public static void main(String[] args) {
-		final ReetranLockDemo01 reetranLockDemo01 = new ReetranLockDemo01();
+		final ReetranLockDemo2 reetranLockDemo02 = new ReetranLockDemo2();
 
 		new Thread() {
 			public void run() {
-				reetranLockDemo01.insert(Thread.currentThread());
+				reetranLockDemo02.insert(Thread.currentThread());
 			};
 		}.start();
 		
 		new Thread() {
 			public void run() {
-				reetranLockDemo01.insert(Thread.currentThread());
+				reetranLockDemo02.insert(Thread.currentThread());
 			};
 		}.start();
 	}
 
 	public void insert(Thread thread) {
-		Lock lock = new ReentrantLock();
+		
 		lock.lock();
 		try {
 			System.out.println(thread.getName() + " 得到了锁");

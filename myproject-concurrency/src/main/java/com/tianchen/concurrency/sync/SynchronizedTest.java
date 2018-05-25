@@ -1,4 +1,4 @@
-package com.tianchen.concurrency;
+package com.tianchen.concurrency.sync;
 
 /**
  * 

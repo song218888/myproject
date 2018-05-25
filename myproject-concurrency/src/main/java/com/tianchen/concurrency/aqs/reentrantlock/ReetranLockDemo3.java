@@ -1,4 +1,4 @@
-package com.tianchen.concurrency.lock;
+package com.tianchen.concurrency.aqs.reentrantlock;
 
 import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;

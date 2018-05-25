@@ -1,4 +1,4 @@
-package com.tianchen.concurrency;
+package com.tianchen.concurrency.aqs.reentrantlock;
 
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
