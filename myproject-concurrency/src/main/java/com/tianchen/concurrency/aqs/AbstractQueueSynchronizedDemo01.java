@@ -14,6 +14,7 @@ public class AbstractQueueSynchronizedDemo01 {
 		AbstractQueuedSynchronizer aqs ;
 		
 		
+		
 		Lock lock = new ReentrantLock();
 		lock.lock();
 		lock.unlock();
