@@ -1,12 +1,9 @@
-package com.tiancheng.hystrix.demo01.test;
+package com.tiancheng.hystrix.demo01;
 
 import java.io.IOException;
 import java.util.Map;
 
 import org.junit.Test;
-
-import com.tiancheng.hystrix.demo01.HelloWorldHystrixCommand;
-import com.tiancheng.hystrix.demo01.HystrixCommand4Semaphore;
 
 public class HystrixCommand4SemaphoreTest {
 	@Test

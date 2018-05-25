@@ -1,4 +1,4 @@
-package com.tiancheng.hystrix.demo01.test;
+package com.tiancheng.hystrix.demo01;
 
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;

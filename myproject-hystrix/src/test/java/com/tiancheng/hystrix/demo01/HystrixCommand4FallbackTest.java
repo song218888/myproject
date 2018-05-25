@@ -1,4 +1,4 @@
-package com.tiancheng.hystrix.demo01.test;
+package com.tiancheng.hystrix.demo01;
 
 import org.junit.Test;
 

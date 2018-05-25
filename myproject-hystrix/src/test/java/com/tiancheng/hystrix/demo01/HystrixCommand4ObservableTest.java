@@ -1,8 +1,6 @@
-package com.tiancheng.hystrix.demo01.test;
+package com.tiancheng.hystrix.demo01;
 
 import org.junit.Test;
-
-import com.tiancheng.hystrix.demo01.HelloWorldHystrixCommand;
 
 import rx.Observable;
 import rx.Observer;

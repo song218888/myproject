@@ -1,4 +1,4 @@
-package com.tiancheng.hystrix.demo01.test;
+package com.tiancheng.hystrix.demo01;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,8 +6,6 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
-
-import com.tiancheng.hystrix.demo01.HelloWorldHystrixCommand;
 
 public class HystrixCommand4QueueTest {
 	@Test

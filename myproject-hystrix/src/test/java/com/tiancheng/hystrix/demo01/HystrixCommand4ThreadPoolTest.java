@@ -1,4 +1,4 @@
-package com.tiancheng.hystrix.demo01.test;
+package com.tiancheng.hystrix.demo01;
 
 import java.io.IOException;
 import java.util.Map;

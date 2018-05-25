@@ -38,7 +38,7 @@ public class HelloWorldHystrixObservableCommand extends HystrixObservableCommand
 						// observer.onError(getExecutionException()); //直接抛异常退出，不会往下执行
 						observer.onNext("Hello1" + " thread:" + Thread.currentThread().getName());
 						observer.onNext("Hello2" + " thread:" + Thread.currentThread().getName());
-						observer.onNext(name + " thread:" + Thread.currentThread().getName());
+						observer.onNext(name + " thread======:" + Thread.currentThread().getName());
 						System.out.println("complete before------" + " thread:" + Thread.currentThread().getName());
 						observer.onCompleted(); // 不会往下执行observer的任何方法
 						System.out.println("complete after------" + " thread:" + Thread.currentThread().getName());
@@ -56,15 +56,15 @@ public class HelloWorldHystrixObservableCommand extends HystrixObservableCommand
 		Observable<String> observable = new HelloWorldHystrixObservableCommand("test").observe();
 		observable.subscribe(new Subscriber<String>() {
 			public void onCompleted() {
-				System.out.println("completed");
+				System.out.println("Main : completed");
 			}
 
 			public void onError(Throwable throwable) {
-				System.out.println("error-----------" + throwable);
+				System.out.println("Main : error " + throwable);
 			}
 
 			public void onNext(String v) {
-				System.out.println("next------------" + v);
+				System.out.println("Main : next " + v);
 			}
 		});
 	}
