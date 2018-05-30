@@ -12,4 +12,6 @@ Semaphore
 4：Semaphore能解决什么问题
 
 
-参考：https://www.cnblogs.com/cl1024cl/p/6205011.html
+参考：
+https://www.cnblogs.com/cl1024cl/p/6205011.html
+http://ifeve.com/concurrency-semaphore/#more-14753
