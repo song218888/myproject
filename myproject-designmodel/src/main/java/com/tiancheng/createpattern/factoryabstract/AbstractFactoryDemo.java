@@ -1,4 +1,4 @@
-package com.tiancheng.createpattern.abstractfactory;
+package com.tiancheng.createpattern.factoryabstract;
 
 //发动机以及型号    
 interface Engine {    

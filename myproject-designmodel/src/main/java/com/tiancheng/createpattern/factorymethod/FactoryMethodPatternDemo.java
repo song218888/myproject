@@ -1,72 +1,60 @@
 package com.tiancheng.createpattern.factorymethod;
 
-interface Shape {
-	void draw();
-}
+/**
+ * 简单工厂依赖于工厂类，如果一旦需要拓展，工厂类需要跟着改动
+ * 
+ * 解决的方式是将工厂类定义为一个接口以实现解耦
+ * 
+ * @author DELL
+ *
+ */
+interface Sender {  
+    public void Send();  
+}  
 
-// 矩形
-class Rectangle implements Shape {
-	@Override
-	public void draw() {
-		System.out.println("Inside Rectangle::draw() method.");
-	}
-}
 
-// 正方形
-class Square implements Shape {
-	@Override
-	public void draw() {
-		System.out.println("Inside Square::draw() method.");
-	}
-}
+class MailSender implements Sender {  
+    @Override  
+    public void Send() {  
+        System.out.println("this is mailsender!");  
+    }  
+}  
 
-// 圆形
-class Circle implements Shape {
-	@Override
-	public void draw() {
-		System.out.println("Inside Cricle::draw() method.");
-	}
-}
 
-//工厂方法
-class ShapeFactory {
+class SmsSender implements Sender {  
+  
+    @Override  
+    public void Send() {  
+        System.out.println("this is sms sender!");  
+    }  
+}  
 
-	// 使用 getShape 方法获取形状类型的对象
-	public Shape getShape(String shapeType) {
-		if (shapeType == null) {
-			return null;
-		}
-		if (shapeType.equalsIgnoreCase("CIRCLE")) {
-			return new Circle();
-		} else if (shapeType.equalsIgnoreCase("RECTANGLE")) {
-			return new Rectangle();
-		} else if (shapeType.equalsIgnoreCase("SQUARE")) {
-			return new Square();
-		}
-		return null;
-	}
-}
+
+class SendMailFactory implements Provider {  
+      
+    @Override  
+    public Sender produce(){  
+        return new MailSender();  
+    }  
+}  
+
+
+class SendSmsFactory implements Provider{  
+  
+    @Override  
+    public Sender produce() {  
+        return new SmsSender();  
+    }  
+}  
+
+interface Provider {  
+    public Sender produce();  
+}  
 
 public class FactoryMethodPatternDemo {
 	public static void main(String[] args) {
-		ShapeFactory shapeFactory = new ShapeFactory();
-
-	      //获取 Circle 的对象，并调用它的 draw 方法
-	      Shape shape1 = shapeFactory.getShape("CIRCLE");
-
-	      //调用 Circle 的 draw 方法
-	      shape1.draw();
-
-	      //获取 Rectangle 的对象，并调用它的 draw 方法
-	      Shape shape2 = shapeFactory.getShape("RECTANGLE");
-
-	      //调用 Rectangle 的 draw 方法
-	      shape2.draw();
-
-	      //获取 Square 的对象，并调用它的 draw 方法
-	      Shape shape3 = shapeFactory.getShape("SQUARE");
-
-	      //调用 Square 的 draw 方法
-	      shape3.draw();
+		Provider provider = new SendMailFactory();  
+        Sender sender = provider.produce();  
+        sender.Send();  
 	}
 }
