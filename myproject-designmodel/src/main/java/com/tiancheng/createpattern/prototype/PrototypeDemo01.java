@@ -18,7 +18,7 @@ class ConcretePrototype extends Prototype {
 	}
 }
 
-public class PrototypeDemo {
+public class PrototypeDemo01 {
 	public static void main(String[] args) {
 		ConcretePrototype cp = new ConcretePrototype();
 		for (int i = 0; i < 10; i++) {

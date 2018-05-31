@@ -155,7 +155,7 @@ class MealBuilder {
 	}
 }
 
-public class BuilderDemo {
+public class BuilderDemo01 {
 	public static void main(String[] args) {
 		MealBuilder mealBuilder = new MealBuilder();
 

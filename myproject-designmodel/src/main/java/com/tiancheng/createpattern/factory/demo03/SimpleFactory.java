@@ -12,11 +12,13 @@ interface Sender {
 }
 
 class MailSender implements Sender {
+
 	@Override
 	public void Send() {
-		System.out.println("this is mailsender!");
+		System.out.println("this is mail sender!");
 	}
 }
+
 
 class SmsSender implements Sender {
 
