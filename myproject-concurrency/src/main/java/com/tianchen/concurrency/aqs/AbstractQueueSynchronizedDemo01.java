@@ -13,7 +13,7 @@ public class AbstractQueueSynchronizedDemo01 {
 	public static void main(String[] args) throws Exception{
 		AbstractQueuedSynchronizer aqs ;
 		
-		
+		Object object;
 		
 		Lock lock = new ReentrantLock();
 		lock.lock();
