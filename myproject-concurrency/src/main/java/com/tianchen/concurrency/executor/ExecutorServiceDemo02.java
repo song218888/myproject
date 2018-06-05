@@ -1,5 +1,5 @@
 package com.tianchen.concurrency.executor;
 
-public class ExecutorsDemo01 {
+public class ExecutorServiceDemo02 {
 
 }
