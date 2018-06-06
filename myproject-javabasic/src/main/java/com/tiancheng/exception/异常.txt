@@ -1,0 +1,14 @@
+error
+程序运行的错误，没办法捕获，常见如 outofMemoryError
+
+exception
+程序可以遇见的错误
+分为可检测异常：程序自定义异常，编译期间必须捕获
+不可检测异常：如空指针异常
+
+throws:用在方法签名中，用于申请抛出异常
+throw：抛出一个异常
+
+
+自定义异常应继承Exception还是RuntimeException?
+参考：http://www.mamicode.com/info-detail-289920.html

@@ -1043,6 +1043,7 @@
 	    <module>myproject-jvm</module>
 	    <module>myproject-hystrix</module>
 	    <module>myproject-guava</module>
+	    <module>myproject-web</module>
 	</modules>
 	
 	<build>

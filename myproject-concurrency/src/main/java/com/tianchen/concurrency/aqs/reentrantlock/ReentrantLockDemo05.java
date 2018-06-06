@@ -40,5 +40,4 @@ public class ReentrantLockDemo05 {
 			System.out.println(thread.getName() + "获取锁失败");
 		}
 	}
-
 }
