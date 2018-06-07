@@ -2,6 +2,8 @@ package org.myproject.netty.lesson01;
 
 import java.net.InetSocketAddress;
 
+import org.springframework.asm.commons.AdviceAdapter;
+
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelFutureListener;
@@ -24,6 +26,9 @@ import io.netty.channel.socket.nio.NioSocketChannel;
  *
  */
 public class NettyClient {
+	
+	AdviceAdapter adapter;
+	
 	private final String host;
 	private final int port;
 
