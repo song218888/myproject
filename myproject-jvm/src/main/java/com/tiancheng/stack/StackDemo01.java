@@ -5,7 +5,7 @@ package com.tiancheng.stack;
  * @author DELL
  * 
  */
-public class StackDemo {
+public class StackDemo01 {
 	private int count = 0;
 
 	public void testAdd() {
@@ -23,6 +23,6 @@ public class StackDemo {
 	}
 
 	public static void main(String[] args) {
-		new StackDemo().test();
+		new StackDemo01().test();
 	}
 }

@@ -27,7 +27,7 @@ class Singleton {
     }  
 } 
 
-public class ClassLoaderDemo {  
+public class ClassLoaderDemo03 {  
     /** 
      * @Description:启动类 
      * @param args 
