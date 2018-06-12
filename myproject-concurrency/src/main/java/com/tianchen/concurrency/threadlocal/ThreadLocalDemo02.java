@@ -3,7 +3,7 @@ package com.tianchen.concurrency.threadlocal;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TreadLocalDemo02 {
+public class ThreadLocalDemo02 {
 	// static ThreadLocal<HashMap> threadLocal = new ThreadLocal<HashMap>(){
 	// @Override
 	// protected HashMap initialValue() {
