@@ -1044,6 +1044,8 @@
 	    <module>myproject-hystrix</module>
 	    <module>myproject-web</module>
 	    <module>myproject-guava</module>
+	    <module>myproject-rabbitmq</module>
+	    <module>myproject-disruptor</module>
 	</modules>
 	
 	<build>
