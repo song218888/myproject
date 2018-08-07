@@ -8,5 +8,5 @@
 	使用场景：数据连接对象、缓存对象
 	原理：
 	优缺点：
-	http://ifeve.com/threadlocal%E4%BD%BF%E7%94%A8/
+	http://ifeve.com/threadlocal%E4%BD%BF%E7%94%A8/ 
 	 	
