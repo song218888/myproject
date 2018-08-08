@@ -8,10 +8,10 @@
   <artifactId>myproject-rabbitmq</artifactId>
   
   <!-- https://mvnrepository.com/artifact/com.lmax/disruptor -->
-<dependency>
-    <groupId>com.lmax</groupId>
-    <artifactId>disruptor</artifactId>
-    <version>3.4.2</version>
-</dependency>
-
+<dependencies>
+	<dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+        </dependency>
+    </dependencies>
 </project>
