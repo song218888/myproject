@@ -9,11 +9,11 @@
 	<artifactId>myproject-hbase</artifactId>
 
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-hdfs</artifactId>
 			<version>2.7.3</version>
-		</dependency>
+		</dependency> 
 		<dependency>
 			<groupId>org.apache.hbase</groupId>
 			<artifactId>hbase-client</artifactId>
@@ -24,17 +24,17 @@
 					<groupId>com.google.guava</groupId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 		</dependency>
-		<dependency>
+	<!-- 	<dependency>
 			<groupId>jdk.tools</groupId>
 			<artifactId>jdk.tools</artifactId>
 			<version>1.8</version>
 			<scope>system</scope>
-			<systemPath>C:/jdk1.8.0_151/lib/tools.jar</systemPath>
-		</dependency>
+			<systemPath>C:/Program Files/Java/jre1.8.0_191/tools.jar</systemPath>
+		</dependency> -->
 	</dependencies>
 </project>
