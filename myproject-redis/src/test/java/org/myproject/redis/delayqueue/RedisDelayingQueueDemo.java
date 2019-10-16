@@ -34,29 +34,29 @@ public class RedisDelayingQueueDemo<T> {
 		// 分配唯一的 uuid
 		task.msg = msg;
 		String s = JSON.toJSONString(task); // fastjson 序列化
-		jedis.zadd(queueKey, System.currentTimeMillis() + 5000, s); // 塞入延时队列
+//		jedis.zadd(queueKey, System.currentTimeMillis() + 5000, s); // 塞入延时队列
 																	// ,5s 后再试
 	}
 
 	public void loop() {
-		while (!Thread.interrupted()) {
-			// 只取一条
-			Set<String> values = jedis.zrangeByScore(queueKey, 0, System.currentTimeMillis(), 0, 1);
-			if (values.isEmpty()) {
-				try {
-					Thread.sleep(500);
-				} catch (InterruptedException e) {
-					break;
-				}
-				continue;
-			}
-			String s = values.iterator().next();
-			if (jedis.zrem(queueKey, s) > 0) { // 抢到了
-				TaskItem<T> task = JSON.parseObject(s, TaskType);
-				// fastjson 反序列化
-				this.handleMsg(task.msg);
-			}
-		}
+//		while (!Thread.interrupted()) {
+//			// 只取一条
+//			Set<String> values = jedis.zrangeByScore(queueKey, 0, System.currentTimeMillis(), 0, 1);
+//			if (values.isEmpty()) {
+//				try {
+//					Thread.sleep(500);
+//				} catch (InterruptedException e) {
+//					break;
+//				}
+//				continue;
+//			}
+//			String s = values.iterator().next();
+//			if (jedis.zrem(queueKey, s) > 0) { // 抢到了
+//				TaskItem<T> task = JSON.parseObject(s, TaskType);
+//				// fastjson 反序列化
+//				this.handleMsg(task.msg);
+//			}
+//		}
 	}
 
 	public void handleMsg(T msg) {
